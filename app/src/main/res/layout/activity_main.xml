@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191414"
+    android:onClick="onClickMathematicalButton"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="15dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#a6a6a5"
+            android:importantForAutofill="no"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="32sp" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="385dp"
+        android:layout_height="449dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.07999998">
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button07"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_round_button"
+                android:onClick="onClickNumericalButton"
+                android:text="@string/btn07"
+                android:textColor="#fff"
+                android:textSize="28sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button08"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_round_button"
+                android:onClick="onClickNumericalButton"
+                android:text="@string/btn08"
+                android:textColor="#fff"
+                android:textSize="28sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button09"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_round_button"
+                android:onClick="onClickNumericalButton"
+                android:text="@string/btn09"
+                android:textColor="#fff"
+                android:textSize="28sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonADD"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_round_button"
+                android:onClick="onClickMathematicalButton"
+                android:text="@string/btnADD"
+                android:textColor="#00B300"
+                android:textSize="28sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button04"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_round_button"
+                android:onClick="onClickNumericalButton"
+                android:text="@string/btn04"
+                android:textColor="#fff"
+                android:textSize="28sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button05"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_round_button"
+                android:onClick="onClickNumericalButton"
+                android:text="@string/btn05"
+                android:textColor="#fff"
+                android:textSize="28sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button06"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_round_button"
+                android:onClick="onClickNumericalButton"
+                android:text="@string/btn06"
+                android:textColor="#fff"
+                android:textSize="28sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonSubtract"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_round_button"
+                android:onClick="onClickMathematicalButton"
+                android:text="@string/btnSubtract"
+                android:textColor="#00B300"
+                android:textSize="28sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button03"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_round_button"
+                android:onClick="onClickNumericalButton"
+                android:text="@string/btn03"
+                android:textColor="#fff"
+                android:textSize="28sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button02"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_round_button"
+                android:onClick="onClickNumericalButton"
+                android:text="@string/btn02"
+                android:textColor="#fff"
+                android:textSize="28sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button01"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_round_button"
+                android:onClick="onClickNumericalButton"
+                android:text="@string/btn01"
+                android:textColor="#fff"
+                android:textSize="28sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonDivide"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_round_button"
+                android:onClick="onClickMathematicalButton"
+                android:text="@string/btnDivide"
+                android:textColor="#00B300"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonClear"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_round_button"
+                android:onClick="onClickMathematicalButton"
+                android:text="@string/btnClear"
+                android:textColor="#F4364C"
+                android:textSize="28sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button00"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_round_button"
+                android:onClick="onClickNumericalButton"
+                android:text="@string/btn00"
+                android:textColor="#fff"
+                android:textSize="28sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonDot"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_round_button"
+                android:onClick="onClickNumericalButton"
+                android:text="@string/btnDot"
+                android:textColor="#00B300"
+                android:textSize="28sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonMultiply"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_round_button"
+                android:onClick="onClickMathematicalButton"
+                android:text="@string/btnMultiply"
+                android:textColor="#00B300"
+                android:textSize="28sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonEqual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_round_button"
+                android:onClick="onClickMathematicalButton"
+                android:text="@string/btnEqual"
+                android:textColor="#fff"
+                android:textSize="28sp" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
